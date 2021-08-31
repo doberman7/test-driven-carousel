@@ -1,6 +1,12 @@
-// src/CarouselButton.js
 import React from "react";
+import PropTypes from "prop-types";
 
-const CarouselButton = () => <button />;
+// START_HIGHLIGHT
+const CarouselButton = (props) => <button {...props} />; //<callout id="co.spread-props" />
+// END_HIGHLIGHT
+
+CarouselButton.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default CarouselButton;
