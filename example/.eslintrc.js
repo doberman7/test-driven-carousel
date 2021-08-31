@@ -4,7 +4,6 @@ module.exports = {
     browser: true,
   },
   rules: {
-    carousel: "./src/Carousel.js",
-    example: "./example/index.js",
+    "react/prop-types": "off",
   },
 };

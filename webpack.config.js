@@ -4,7 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development", // good defaults to run locally
   entry: {
-    carousel: "./src/Carousel.js", // telling webpack to build a bundle called carousel.js that contains src/Carousel.js and its dependencies.
+    // carousel: "./src/Carousel.js", // telling webpack to build a bundle called carousel.js that contains src/Carousel.js and its dependencies.
+    carousel: "./src/Carousel.js",
+    example: "./example/index.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
